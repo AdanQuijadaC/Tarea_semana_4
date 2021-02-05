@@ -1,0 +1,34 @@
+package Tareas_IACC;
+
+/**
+ *
+ * @author adans
+ */
+public class Hombres extends Empleado{
+    private boolean estado;
+    
+    // --------- Constructor ----------
+    public Hombres(String nombre, String apellido, double sueldo, int edad, boolean estado) {
+        super(nombre, apellido, sueldo, edad);
+        this.estado = estado;
+    }
+    public static void main(String [] args){
+    Hombres ejemplo2 = new Hombres("Juan", "Perez", 2000, 45, true);
+    
+    System.out.print(ejemplo2.devuelveSueldoLiquido("Juan"));
+    }
+    
+    
+    public void setEstado(boolean estado){
+    
+    this.estado = estado;
+    }
+    
+    public boolean getEstado(){
+    
+        return estado;
+    }
+
+    
+    
+}
